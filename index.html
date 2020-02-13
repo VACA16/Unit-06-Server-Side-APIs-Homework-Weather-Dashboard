@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<header>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+    </nav>
+</header>
+
+<body>
+    <br>
+
+
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="search">
+
+                <div class="card w-100">
+                    <div class="d-flex justify-content-center">
+                        <h4>Search for a City:</h4>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <br>
+                        <div class="card" style="width: 17.2rem;">
+                            <form class="form-inline">
+                                <label for="inputCity" class="sr-only">City</label>
+                                <input class="form-control" type="text" id="inputCity" placeholder="City">
+                                <input class="btn btn-primary" type="submit" id="searchCity" value="Search">
+                            </form>
+                            <br>
+                            <form class="form-inline">
+                                <ul class="list-group list-group-flush searchHistory" id="buttons-view"></ul>
+                            </form>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="currentWeather">
+
+                <div class="d-flex justify-content-center">
+                    <div class="card w-100">
+                        <div class="card-body">
+                            <ul style="list-style-type:none;">
+                                <form class="form-inline">
+                                    <h1 id="city">City</h1>
+                                    <h1 id="date"></h1>
+                                    <img id="icon"></img>
+                                </form>
+                                <br>
+                                <li id="temp">Tempature:</li>
+                                <br>
+                                <li id="humi">Humidity:</li>
+                                <br>
+                                <li id="wind">Wind Speed:</li>
+                                <br>
+                                <li id="uv">UV Index:</li>
+                                <br>
+                                <h2 class="forcast">5-Day Forcast:</h2>
+
+                                <form class="form-inline">
+                                    <div class="card text-white bg-primary mb-3" style="max-width: 12rem;">
+                                        <div class="card-body">
+                                            <h3 id="date-1">date</h3>
+                                            <img id="icon-1"></img>
+                                            <li id="temp-1">Tempature:</li>
+                                            <li id="humi-1">Humidity:</li>
+                                        </div>
+                                    </div>
+
+                                    <div class="card text-white bg-primary mb-3" style="max-width: 12rem;">
+                                        <div class="card-body">
+                                            <h3 id="date-2">date</h3>
+                                            <img id="icon-2"></img>
+                                            <li id="temp-2">Tempature:</li>
+                                            <li id="humi-2">Humidity:</li>
+                                        </div>
+                                    </div>
+
+                                    <div class="card text-white bg-primary mb-3" style="max-width: 12rem;">
+                                        <div class="card-body">
+                                            <h3 id="date-3">date</h3>
+                                            <img id="icon-3"></img>
+                                            <li id="temp-3">Tempature:</li>
+                                            <li id="humi-3">Humidity:</li>
+                                        </div>
+                                    </div>
+
+                                    <div class="card text-white bg-primary mb-3" style="max-width: 12rem;">
+                                        <div class="card-body">
+                                            <h3 id="date-4">date</h3>
+                                            <img id="icon-4"></img>
+                                            <li id="temp-4">Tempature:</li>
+                                            <li id="humi-4">Humidity:</li>
+                                        </div>
+                                    </div>
+
+                                    <div class="card text-white bg-primary mb-3" style="max-width: 12rem;">
+                                        <div class="card-body">
+                                            <h3 id="date-5">date</h3>
+                                            <img id="icon-5"></img>
+                                            <li id="temp-5">Tempature:</li>
+                                            <li id="humi-5">Humidity:</li>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

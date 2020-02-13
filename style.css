@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+}
+
+.search {
+    height: 675px;
+}
+
+.currentWeather {
+    height: 675px;
+}
